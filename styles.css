@@ -11,3 +11,35 @@
 @media(max-width:850px){.hero-inner{grid-template-columns:1fr 1fr;gap:10px}.hero h1{font-size:55px}.focus-grid{grid-template-columns:repeat(2,1fr)}.about-inner,.contact-inner{gap:40px}.nav-links{gap:20px}}
 @media(max-width:620px){.container{width:calc(100% - 34px)}.header{height:68px}.brand img{width:40px;height:40px}.brand b{font-size:12px}.menu-toggle{display:flex;flex-direction:column;gap:5px;background:none;border:0;padding:8px}.menu-toggle i{display:block;width:22px;height:2px;background:#d9f7ff}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#081426;padding:18px 22px 22px;flex-direction:column;align-items:stretch;gap:18px;border-bottom:1px solid #23344b}.nav-links.open{display:flex}.nav-contact{text-align:center}.hero-inner{grid-template-columns:1fr;padding-top:48px;padding-bottom:25px}.hero h1{font-size:clamp(49px,13vw,66px)}.hero-description{max-width:390px}.hero-art{height:300px;margin-top:8px}.art-orbit.orbit-b{width:350px}.hero-bottom{padding-bottom:14px}.focus-section{padding:18px 0 60px}.focus-grid{grid-template-columns:1fr 1fr;gap:9px}.focus-card{min-height:185px;padding:16px 13px}.focus-card h2{font-size:12px}.focus-card p{font-size:9px}.about-section,.contact-section{padding:65px 0}.about-inner,.contact-inner{grid-template-columns:1fr;gap:24px}.about-inner h2,.contact-copy h2{font-size:43px}.about-inner>div:last-child{padding-top:0}.contact-form{padding:21px 17px}.footer-top{align-items:flex-start;gap:16px;flex-wrap:wrap}.footer-top p{width:100%;order:3}.footer-bottom{gap:8px;flex-wrap:wrap}.whatsapp-float{right:12px;bottom:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+
+/* Leadership & management team */
+.leadership-section{position:relative;overflow:hidden;padding:82px 0 88px;background:radial-gradient(ellipse at 50% 0%,rgba(0,190,235,.10),transparent 48%),#081426;border-top:1px solid rgba(0,220,245,.12)}
+.leadership-heading{text-align:center;max-width:650px;margin:0 auto 46px}
+.leadership-heading h2{font:700 clamp(30px,4vw,43px)/1.12 var(--display);letter-spacing:-1.5px;margin:15px 0 12px}
+.leadership-heading h2 span{color:var(--cyan)}
+.leadership-heading>p{font-size:12px;line-height:1.7;color:#9eacc0;margin:0}
+.leadership-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:780px;margin:0 auto}
+.leader-card{display:flex;flex-direction:column;align-items:center;text-align:center;padding:30px 22px 27px;background:linear-gradient(145deg,rgba(25,37,57,.92),rgba(10,22,40,.95));border:1px solid rgba(76,135,170,.28);border-radius:10px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.leader-card:hover{transform:translateY(-5px);border-color:rgba(0,225,245,.65);box-shadow:0 14px 38px rgba(0,210,245,.09)}
+.leader-photo-wrap{position:relative;width:214px;height:214px;display:grid;place-items:center;margin:0 auto 22px}
+.leader-orbit{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,transparent 0 22%,#00e5f5 34%,#087cf0 48%,transparent 61% 75%,#00e5f5 88%,transparent 100%);animation:leaderOrbitSpin 7s linear infinite;filter:drop-shadow(0 0 8px rgba(0,220,245,.5))}
+.leader-orbit:before{content:"";position:absolute;inset:4px;border-radius:50%;background:#0b1729}
+.leader-orbit:after{content:"";position:absolute;width:10px;height:10px;right:19px;top:29px;border-radius:50%;background:#a8ffff;box-shadow:0 0 12px 4px rgba(0,229,245,.8)}
+.leader-orbit span{position:absolute;inset:-7px;border:1px dashed rgba(0,215,245,.26);border-radius:50%}
+.leader-photo{position:relative;z-index:1;width:184px;height:184px;border-radius:50%;overflow:hidden;border:2px solid rgba(137,244,255,.8);box-shadow:0 0 0 6px rgba(0,216,245,.08),0 0 28px rgba(0,190,245,.2);background:#10233c}
+.leader-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.leader-info h3{font:700 20px var(--display);margin:0 0 7px;color:#f5fbff}
+.leader-info p{font-size:12px;color:#8defff;margin:0 0 10px}
+.leader-info>span{font-size:8px;letter-spacing:2px;color:#7189a6}
+@keyframes leaderOrbitSpin{to{transform:rotate(360deg)}}
+
+@media(max-width:620px){
+  .leadership-section{padding:62px 0 66px}
+  .leadership-heading{margin-bottom:32px}
+  .leadership-grid{grid-template-columns:1fr;gap:17px;max-width:390px}
+  .leader-card{padding:25px 18px}
+  .leader-photo-wrap{width:198px;height:198px}
+  .leader-photo{width:170px;height:170px}
+}
+@media(prefers-reduced-motion:reduce){.leader-orbit{animation:none}}
