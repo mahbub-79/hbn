@@ -1,43 +1,23 @@
-# House Of BN — Website
+# House Of BN Website — Reference-inspired Demo
 
-A responsive, dark-blue premium corporate website for House Of BN.
+A responsive dark navy and electric-cyan corporate website.
 
-## Preview locally
-1. Extract the ZIP.
-2. Open `index.html` in a browser.
-3. For a local development server, use VS Code Live Server or run:
-   `python -m http.server 8000`
-   Then visit `http://localhost:8000`.
+## Preview
+Open `index.html` in a browser, or run a local server:
+`python -m http.server 8000`
 
-## Run on GitHub Pages
-1. Create a new GitHub repository.
-2. Upload all files and folders from this ZIP (keep the `assets` folder).
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/ (root)`, then Save.
-6. Wait for GitHub Pages to publish the site.
+## GitHub Pages
+Upload the contents of this folder to the root of a GitHub repository.
+Then open **Settings → Pages → Deploy from a branch → main → /(root)** and save.
 
-## Deploy to Firebase Hosting
-This is a static website. After installing Firebase CLI and logging in:
-1. Run `firebase init hosting` in this project folder.
-2. Select your Firebase project.
-3. Set the public directory to `.` (current folder).
-4. Configure as a single-page app: **No**.
-5. If asked to overwrite `index.html`, choose **No**.
-6. Run `firebase deploy`.
+## Firebase Hosting
+Run `firebase init hosting`, select your Firebase project, set public directory to `.`, choose **No** for single-page app, and do not overwrite `index.html`. Then run `firebase deploy`.
 
-A sample `firebase.json` is included. If Firebase initialization has already been completed for your project, you can use:
-`firebase deploy`
+## Contact form
+The form opens the visitor's default email app with the enquiry prefilled. It does not save messages to a database.
 
-## Contact form note
-The contact form uses `mailto:` and opens the visitor's default email application with the message prefilled. It does not store or transmit submissions to a database. For a server-backed form later, connect Firebase/another form service.
-
-## Brand details currently used
-- Name: House Of BN
-- Tagline: Unlocking IT Potential
-- Email: house.bn34@gmail.com
-- Phone / WhatsApp: +880 1853-363434
-- Address: Bandutiya, Manikganj, Dhaka, Bangladesh
-- Focus: Products, Services, Training, Research
-
-Replace the supplied details if they change. Keep the original brand logo and cover image in `assets/`.
+## Brand details
+House Of BN | Unlocking IT Potential
+Phone/WhatsApp: +880 1853-363434
+Email: house.bn34@gmail.com
+Address: Bandutiya, Manikganj, Dhaka, Bangladesh
